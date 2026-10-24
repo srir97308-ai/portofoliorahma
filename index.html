@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Mahasiswa</title>
-  <style>
-    body {font-family: Arial, sans-serif; background:#eef2f7; margin:0; color:#1e293b}
-    header {background:#164e63; color:white; text-align:center; padding:28px}
-    main {max-width:760px; margin:24px auto; background:white; padding:24px; border-radius:12px}
-    h2 {color:#0e7490}
-    footer {text-align:center; padding:16px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0edff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profil {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px #00000015;
+        }
+
+        .profil img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #7955e8;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #30234f;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #7955e8;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .keahlian {
+            background: #f0edff;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #49338a;
+            font-size: 13px;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #7955e8;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .tombol:hover {
+            background: #5838c5;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Website Profil Mahasiswa</h1>
-    <p>Praktik Administrasi Website</p>
-  </header>
-  <main>
-    <h2>Profil Singkat</h2>
-       <img src="dewi.jpeg" width="180px">
-    <p>Halo, saya [Nama Nur Dewi Putri]. Saya sedang belajar memublikasikan website.</p>
-    <h2>Informasi</h2>
-    <ul>
-      <li>Program Studi: Informatika</li>
-      <li>Mata Kuliah: Administrasi Website</li>
-      <li>Topik: Hosting dan publikasi website</li>
-    </ul>
-    <h2>Tujuan</h2>
-    <p>Halaman ini dibuat sebagai latihan mengunggah HTML ke layanan hosting.</p>
-  </main>
-  <footer>Website latihan mahasiswa — 2026</footer>
+
+    <div class="profil">
+        <img
+            src="WhatsApp Image 2026-10-17 at 08.12.52 (1).jpeg"
+            alt="Foto Profil">
+
+        <h1>Sri Rahmawati</h1>
+        <h3>Mahasiswa Informatika</h3>
+
+        <p>
+            Halo! Saya mahasiswa informatika
+            dari fakultas Teknik Komputer
+            pada universitas cokroaminoto palopo.
+        </p>
+
+        <div class="keahlian">
+            <strong>Alamat</strong><br>
+            Lamasi
+        </div>
+
+        <p>
+            📧 srir97308@gmail.com<br>
+        </p>
+
+        <a class="tombol"
+           href="https://instagram.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Instagram Saya
+        </a>
+    </div>
+
 </body>
 </html>
